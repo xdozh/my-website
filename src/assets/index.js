@@ -26,6 +26,20 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+//experience icons
+import sabis from "./company/sabis.png";
+import WebOOK from "./company/WebOOK.png";
+
+//Studies
+import AUS from "./company/AUS.png";
+import aus_big from "./company/aus_big.png";
+import ISC_Dubai from "./company/ISC_Dubai.png";
+import Google_Skill from "./company/Google_Skill.png";
+
+//icons
+import Google from "./company/Google.png";
+
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -59,4 +73,14 @@ export {
   carrent,
   jobit,
   tripguide,
+  //experience
+  sabis,
+  WebOOK,
+  //studies
+  AUS,
+  ISC_Dubai,
+  Google_Skill,
+  aus_big,
+  //icon
+  Google,
 };

@@ -13,14 +13,14 @@ import {
   nodejs,
   mongodb,
   git,
-  meta,
-  starbucks,
   tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  AUS,
+  sabis,
+  WebOOK, Google, Google_Skill, aus_big, ISC_Dubai,
 } from "../assets";
 
 export const navLinks = [
@@ -107,53 +107,67 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Project-1(Self Project)",
-    //company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: " ",
+    title: "President",
+    company_name: "SABIS MUN Club",
+    icon: sabis,
+    iconBg: "#fff",
+    date: "September 2020 - June 2022",
     points: [
-      
+      "Overlook the operations of the club",
+      "Develop and maintain the quality of the club.",
+      "Host conferences",
+      "Give the Introductory Presentation",
+
     ],
   },
   {
-    title: "Project-2(Self Project)",
-    //company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: " ",
+    title: "Debater",
+    company_name: "SABIS Debate Club",
+    icon: sabis,
+    iconBg: "#fff",
+    date: "April 2020 - June 2022",
     points: [
-      
-    ],
-  },
-  /*
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Work it either teams of two or three to win weekly debates",
+      "Adjudicate the debate",
+      "Help the newly joined members",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Vice-President",
+    company_name: "SABIS Coding Club,",
+    icon: sabis,
+    iconBg: "#fff",
+    date: "February 2021 - June 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Tasked with managing and setting up meetings.",
+      "Resourcing educational material.",
+      "Guide new members & help them setup the required software.",
     ],
   },
-  */
+  {
+    title: "Co-Founder",
+    company_name: "WebOOK",
+    icon: WebOOK,
+    iconBg: "#fff",
+    date: "November 2019 - Present",
+    points: [
+      "Conducted surveys & prepared the presentation.",
+      "Built mock website for final presentation.",
+      " Presented the idea to the Director of ISCDXB.",
+    ],
+  },
+  {
+    title: "Resident Assistant",
+    company_name: "American University of Sharjah",
+    icon: AUS,
+    iconBg: "#fff",
+    date: "September 2023 - Present",
+    points: [
+      "Part of the Student Residential Life Department, ensuring everything is running smoothly.",
+      "Led one of the biggest events organised by SLRD",
+      "Incharge of 28 students.",
+    ],
+  },
 ];
 
 const testimonials = [
@@ -249,4 +263,37 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const education = [
+  {
+    name: "High School Diploma",
+    description: "The International School of Choueifat",
+    date: "September 2019 - June 2022",
+    tags: [],
+    image: ISC_Dubai,
+    image2: sabis,
+    source_code_link: "https://iscdubai.sabis.net/"
+  },
+
+  {
+    name: "BSc Computer Science",
+    description:
+        "The American University of Sharjah",
+    date: "September 2022 - Present",
+    tags: [],
+    image: aus_big,
+    image2: AUS,
+    source_code_link: "https://www.aus.edu/",
+  },
+  {
+    name: "Fundamentals of Digital Marketing",
+    description:
+        "Google Skillshop-(Google Garage)",
+    date: "December 2022 - January 2023",
+    tags: [],
+    image: Google_Skill,
+    image2: Google,
+    source_code_link: "https://www.aus.edu/",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, education };
