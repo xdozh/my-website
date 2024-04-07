@@ -22,7 +22,6 @@ const App = () => {
             <StarsCanvas />
           </div>
         </div>
-        <SpeedInsights />
       </BrowserRouter>
   );
 }
