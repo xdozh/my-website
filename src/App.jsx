@@ -6,6 +6,7 @@ import Education from "./components/Education.jsx";
 
 const App = () => {
   return (
+      <div>
       <BrowserRouter>
         <div className='relative z-0 bg-primary'>
           <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
@@ -21,9 +22,10 @@ const App = () => {
             <Contact />
             <StarsCanvas />
           </div>
-        <SpeedInsights />
         </div>
       </BrowserRouter>
+      <SpeedInsights />
+      </div>
   );
 }
 
