@@ -21,6 +21,7 @@ const App = () => {
             <Contact />
             <StarsCanvas />
           </div>
+        <SpeedInsights />
         </div>
       </BrowserRouter>
   );
