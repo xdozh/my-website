@@ -16,63 +16,59 @@ import leetcodeIcon from '/src/assets/leetcode.svg';
 
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
+    const formRef = useRef();
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        message: "",
     });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-//template_ezibjvi
-//service_vibv7nh
-//gfmkG9VGtWgAgIvyn
-    emailjs
-      .send(
-        'service_vibv7nh',
-        'template_ezibjvi',
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
-        },
-        'gfmkG9VGtWgAgIvyn'
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+    const [loading, setLoading] = useState(false);
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+    const handleChange = (e) => {
+        const { target } = e;
+        const { name, value } = target;
 
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
+        setForm({
+            ...form,
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs.send(
+            'service_19qtl5o', 'template_sxqv7jp',
+            {
+                from_name: form.name,
+                to_name: "Shourya Maithani",
+                from_email: form.email,
+                to_email: "smaithani07@gmail.com",
+                message: form.message,
+            },
+            '90XRn-OiX31J988C3'
+        )
+            .then(
+                () => {
+                    setLoading(false);
+                    alert("Thank you. I will get back to you as soon as possible.");
+
+                    setForm({
+                        name: "",
+                        email: "",
+                        message: "",
+                    });
+                },
+                (error) => {
+                    setLoading(false);
+                    console.error(error);
+
+                    alert("Ahh, something went wrong. Please try again.");
+                }
+            );
+    };
 
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
@@ -123,7 +119,7 @@ const Contact = () => {
         </form>
         <div className="social-icons-container">
           {/* Add your social handles here with icons */}
-          <a href="https://www.linkedin.com/your-profile" target="_blank" rel="noopener noreferrer" className='text-white font-medium flex items-center social-link'>
+          <a href="www.linkedin.com/in/shouryamaithani/" target="_blank" rel="noopener noreferrer" className='text-white font-medium flex items-center social-link'>
             <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
           </a>
           <a href="https://leetcode.com/your-profile" target="_blank" rel="noopener noreferrer" className='text-white font-medium flex items-center'>
