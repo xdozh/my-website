@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { SpeedInsights } from '@vercel/speed-insights/react';
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Education, StarsCanvas } from "./components";
+import { About, Contact, Experience, Hero, Navbar, Tech, Education, StarsCanvas } from "./components";
 
 const App = () => {
     return (
@@ -20,10 +20,7 @@ const App = () => {
                     <Contact/>
                     <StarsCanvas />
                 </div>
-                <SpeedInsights
-                    url={"https://shourya-maithani.vercel.app"}
-                    mobile={false}
-                />
+                <SpeedInsights/>
             </div>
         </BrowserRouter>
     );
