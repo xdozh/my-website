@@ -20,7 +20,10 @@ const App = () => {
                     <Contact/>
                     <StarsCanvas />
                 </div>
-                <SpeedInsights />
+                <SpeedInsights
+                    url={"https://shourya-maithani.vercel.app"}
+                    mobile={false}
+                />
             </div>
         </BrowserRouter>
     );
