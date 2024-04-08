@@ -20,9 +20,9 @@ const App = () => {
                     <Contact/>
                     <StarsCanvas />
                 </div>
+                <SpeedInsights />
             </div>
-        </BrowserRouter>,
-    <SpeedInsights />
+        </BrowserRouter>
     );
 }
 
